@@ -1,3 +1,7 @@
+# This solution is my own, licensed under MIT license (feel free to copy/edit)
+# The original problem (kata) can be found at: https://www.codewars.com/kata/58905bfa1decb981da00009e
+# Fun kata, do give it a try!
+
 # Python 3: 884ms
 # 'Collect' passengers travelling up till the max floor
 # Then, we can just change direction upon the top floor
