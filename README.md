@@ -1,2 +1,2 @@
-# codewars
-Code snippets from the kata/challenges done on www.codewars.com
+# snippet
+Code snippets and data science projects
