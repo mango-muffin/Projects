@@ -4,7 +4,6 @@ The Kaggle data competition is available [here](https://www.kaggle.com/c/digit-r
 
 The training (and test) set is made up of 784 pixels to represent a 28 by 28 image.
 'label' is the target class (0 to 9):
-
 <br> 
 
 ### Initial Set-up
@@ -33,8 +32,6 @@ label |	pixel0 |	pixel1 |	pixel2 |	... | pixel779 | pixel780 | pixel781 | pixel7
 0 |	1 | 0 |	0  |	... | 0    |    1 	 |     0 |	0    |    0  
 1 |	0 |	0 |	0  |	... | 1    |    0 	 |     0 |	0    |    0  
 2 |	1 |	0 |	0  |	... | 2    |    1 	 |     0 |	0    |    0
-
-
 <br>
 
 By rearranging the pixels to 28x28, we can plot the image:
@@ -50,18 +47,15 @@ X = train.iloc[:, 1:]
 y = train.iloc[:, 0]
 
 print_img(np.array(X.iloc[3]).reshape(28, 28))
-print (y[3])
+print ("Image label: ", y[3])
 ```
 <img height = "200" src = "https://bit.ly/3c4Mfdt" />
+>Image label: 4
+<br><br><br>
 
->4
-
-<br>
-
+### Neural Network
 #### Preprocessing
-Splitting the initial data set into train and validation data sets.
-<br>
-
+Splitting the initial data set into train and validation data sets. A validation set is used, to measure the accuracy of the model on a test set. 
 We set the seed for train_test_split = 1, so that subsequent runs will generate the same results.
 
 ``` Python
@@ -75,10 +69,10 @@ X = np.array([np.array(X_1.iloc[x]).reshape(image_width, image_height, 1) for x 
 
 train_X, val_X, train_y, val_y = train_test_split(X, y, test_size = 0.3, random_state = 1)
 ```
+<br>
 
-
-### Modelling
-So the summary of the model is 
+#### Modelling
+So the summary of the model is first a 3x3 convolution layer, then a 2x2 pooling (obtain the max of each pool), then a hidden layer with 256 nodes and dropout value of 0.2. Finally, the output layer with a softmax function to give the probability distribution of each row (image) to each label class (0 to 9).  
 The speed to train the model varies, but each epoch should take ~39s.
 
 ```Python
@@ -97,9 +91,9 @@ model.compile(optimizer='adam',
 
 history = model.fit(train_X, np.array(train_y), epochs = 5) 
 ```
+<br>
 
-### Checking with validation set
-For a clearer picture on how accurate the model would be on a test set, the validation set is separate from the trained data.
+#### Checking with validation set
 Now we will apply the model to the validation set that we separated earlier.
 
 ```Python
@@ -130,8 +124,7 @@ Number of misclassifications:  189
 >Sample misclassification  
 Prediction:  7  
 Actual:  4
-
-<br>
+<br><br><br>
 
 ### Test Set & Submission
 Now that the first CNN model has been trained, we can apply it the test set and submit on the leaderboard.
@@ -150,7 +143,7 @@ submission = pd.read_csv("/kaggle/input/digit-recognizer/sample_submission.csv")
 submission["Label"] = test_int
 submission.to_csv("submission.csv", index = False)
 ```
-The test file gives 0.98357 on the leaderboard.
+The test file gives 0.98400 on the leaderboard.
 Results are similar to validation set accuracy, so both train and test sets have a similar distribution.
 This ensures that the model trained can be used for test set.
 
