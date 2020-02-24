@@ -50,6 +50,7 @@ print_img(np.array(X.iloc[3]).reshape(28, 28))
 print ("Image label: ", y[3])
 ```
 <img height = "200" src = "https://bit.ly/3c4Mfdt" />
+
 >Image label: 4
 <br><br><br>
 
