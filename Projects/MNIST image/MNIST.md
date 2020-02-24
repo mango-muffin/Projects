@@ -1,4 +1,4 @@
-### MNIST Kaggle
+## MNIST Kaggle
 The MNIST is a public data set comprising of handwritten digits (0 to 9).
 The Kaggle data competition is available [here](https://www.kaggle.com/c/digit-recognizer).
 
@@ -7,7 +7,9 @@ The training (and test) set is made up of 784 pixels to represent a 28 by 28 ima
 
 <br> 
 
+### Initial Set-up
 #### Loading training file and import required libraries
+
 ```Python
 # Imports
 import numpy as np # linear algebra
@@ -50,7 +52,7 @@ y = train.iloc[:, 0]
 print_img(np.array(X.iloc[3]).reshape(28, 28))
 print (y[3])
 ```
-
+![]()
 >4
 
 <br>
