@@ -52,7 +52,8 @@ y = train.iloc[:, 0]
 print_img(np.array(X.iloc[3]).reshape(28, 28))
 print (y[3])
 ```
-![]()
+<img height = "200" src = "https://bit.ly/3c4Mfdt" />
+
 >4
 
 <br>
@@ -121,12 +122,14 @@ print ("Sample misclassification")
 print ("Prediction: ", pred_int[sample])
 print ("Actual: ", val_y.iloc[sample])
 ```
+>[0.06198824127624181, 0.985]  
+Number of misclassifications:  189
 
->Number of misclassifications:  155
+![](https://bit.ly/2VhFcZi)
 
 >Sample misclassification  
-Prediction:  9  
-Actual:  8
+Prediction:  7  
+Actual:  4
 
 <br>
 
