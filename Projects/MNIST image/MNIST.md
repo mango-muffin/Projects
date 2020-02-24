@@ -120,7 +120,7 @@ print ("Actual: ", val_y.iloc[sample])
 >[0.06198824127624181, 0.985]  
 Number of misclassifications:  189
 
-![](https://bit.ly/2VhFcZi)
+<img height = "200" src = "https://bit.ly/2VhFcZi" />
 
 >Sample misclassification  
 Prediction:  7  
