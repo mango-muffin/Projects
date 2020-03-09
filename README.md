@@ -6,4 +6,5 @@ Data is often obtained from Kaggle competitions
 
 ### PROJECTS:
 
-[MNIST]!(https://github.com/mango-muffin/Projects/blob/master/MNIST%20image/MNIST.md)
+[MNIST](https://github.com/mango-muffin/Projects/blob/master/MNIST%20image/MNIST.md)
+
