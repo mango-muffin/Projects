@@ -19,10 +19,10 @@ The values will be scaled (i.e. value/255) for better performance.
 A sample of the train set:  
 ![](https://user-images.githubusercontent.com/40700585/76387146-30554300-63a1-11ea-8ed0-dc1e329e70ad.png)
 
+Distribution of digits:  
+![MNIST_train_distribution](https://user-images.githubusercontent.com/40700585/76390522-87aae180-63a8-11ea-92c1-288edfdc5600.png)  
 In general, the distribution of the train set is quite even, and assuming the test set has a similar distribution and features (it does), the train set is a good indicator for the test set.  
 Distribution of labels of the train set:  
-
-![MNIST_train_distribution](https://user-images.githubusercontent.com/40700585/76390522-87aae180-63a8-11ea-92c1-288edfdc5600.png)
 
 
 
