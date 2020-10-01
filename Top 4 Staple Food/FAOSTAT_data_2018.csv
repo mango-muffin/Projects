@@ -1,0 +1,9 @@
+﻿Domain Code,Domain,Area Code,Area,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+"QC","Crops","5000","World","5312","Area harvested","56","Maize","2018","2018","ha","193733568","A","Aggregate, may include official, semi-official, estimated or calculated data"
+"QC","Crops","5000","World","5510","Production","56","Maize","2018","2018","tonnes","1147621938","A","Aggregate, may include official, semi-official, estimated or calculated data"
+"QC","Crops","5000","World","5312","Area harvested","116","Potatoes","2018","2018","ha","17578672","A","Aggregate, may include official, semi-official, estimated or calculated data"
+"QC","Crops","5000","World","5510","Production","116","Potatoes","2018","2018","tonnes","368168914","A","Aggregate, may include official, semi-official, estimated or calculated data"
+"QC","Crops","5000","World","5312","Area harvested","27","Rice, paddy","2018","2018","ha","167132623","A","Aggregate, may include official, semi-official, estimated or calculated data"
+"QC","Crops","5000","World","5510","Production","27","Rice, paddy","2018","2018","tonnes","782000147","A","Aggregate, may include official, semi-official, estimated or calculated data"
+"QC","Crops","5000","World","5312","Area harvested","15","Wheat","2018","2018","ha","214291888","A","Aggregate, may include official, semi-official, estimated or calculated data"
+"QC","Crops","5000","World","5510","Production","15","Wheat","2018","2018","tonnes","734045174","A","Aggregate, may include official, semi-official, estimated or calculated data"
