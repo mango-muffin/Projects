@@ -35,3 +35,15 @@ The train set for this is a collection of >7500 tweets, labelled disaster tweet 
 Currently the folder contains a ridge regression analysis to predict whether a tweet is about a disaster or not.
 
 
+
+
+
+
+<br><br><br>
+__________________________________________________________________________________________________________________________________  
+**[Top 4 Staple Foods](https://github.com/mango-muffin/Projects/tree/master/Top%204%20Staple%20Food)**
+
+This is an infographic to showcase some information on the world's top 4 most common staple food.
+![Top 4 Food Staples - Dashboard](https://user-images.githubusercontent.com/40700585/97117830-430a6580-1741-11eb-8ba9-b2c514f638a4.png)
+More details, such as code, is available at the above link.
+
